@@ -1,0 +1,273 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #00738d, #5b5757);
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* Navbar */
+header {
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.logo img {
+  width: 15%;
+  /* font-weight: bold;
+  font-size: 1.3rem; */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin-right: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffd5;
+}
+
+/* Section Styling */
+section {
+  /* padding: 4rem 2rem; */
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  /* padding-top: 1rem; */
+  background-image: url("images/press\ laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+
+.hero-text {
+  color: #302020;
+}
+
+.hero-text h1,
+p {
+  font-weight: 800;
+}
+
+.hero-image img {
+  width: 90%;
+  height: 100%;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #00ffd5;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: white;
+}
+
+form button {
+  background: #00ffd5;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* ------------------------- */
+/* RESPONSIVENESS */
+/* ------------------------- */
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Hamburger Menu (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1e1e1e;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  /* 
+  .logo img {
+    width: 10%;
+  } */
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links.show {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* position: sticky; */
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.1rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 1.3rem;
+    margin-bottom: 1.1rem;
+    /* font-size: 0.1rem; */
+  }
+
+  .section {
+    padding: 3rem 1.2rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    align-items: flex-start;
+  }
+
+  .project {
+    padding: 0.8rem;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,382 @@
+@media (min-width: 1024px) {
+  body {
+    margin: 0 40px;
+  }
+
+  /* Hero Section */
+  .heroSection {
+    width: 93vw;
+    height: 112vh;
+  }
+
+  .heroText {
+    padding: 80px;
+  }
+
+  .herobg {
+    width: 93vw;
+    height: 90vh;
+  }
+
+  .heroBtn {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .heroOptions {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  /* SERVICES SECTION */
+
+  .services-Container {
+    flex-direction: row;
+  }
+
+  .designs h3 {
+    font-size: 20px;
+  }
+
+  .designs p {
+    font-size: 16px;
+  }
+
+  .designs span {
+    font-size: 20px;
+  }
+
+  .serviceBtn {
+    font-size: 16px;
+  }
+
+  /* ABOUT ME SECTION */
+  .aboutMe {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+  }
+
+  .aboutMeImg img {
+    width: 110%;
+    height: 95vh;
+    display: block;
+  }
+
+  .aboutMeText {
+    padding: 10px;
+    width: 60%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .aboutMeText p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .learnMoreBtn {
+    font-size: 18px;
+  }
+
+  /* PROJECTS SECTION */
+  .projectsContainer {
+    flex-direction: row;
+  }
+
+  .projectImg p {
+    font-size: 18px;
+  }
+
+  .projects a {
+    font-size: 18px;
+    width: 30%;
+  }
+
+  .siteBtn {
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .contactBtn {
+    font-size: 18px;
+    padding: 8px;
+    width: 20%;
+  }
+
+  /* APPOINTMENT SECTION */
+
+  /* Testimonial section */
+  .testimonial h3 {
+    font-size: 32px;
+  }
+
+  .clientImg {
+    border: 10px solid #511818;
+    width: 180px;
+    border-radius: 50%;
+  }
+
+  .clientImg img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .clientsText {
+    font-size: 20px;
+    align-items: flex-start;
+  }
+
+  .clientsText h4 {
+    font-size: 26px;
+  }
+
+  .clientsText span {
+    font-size: 16px;
+  }
+
+  .clients {
+    flex-direction: row;
+  }
+
+  .pagins {
+    border: 2px solid #511818;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  /* Contact section */
+  .contactContainer {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+
+  .fa-solid {
+    font-size: 24px;
+  }
+
+  /* CTA section */
+  .whatsappDetail {
+    width: 20%;
+    padding: 10px;
+  }
+
+  .whatsappDetail a {
+    font-size: 14px;
+  }
+
+  .formContainer input {
+    padding: 12px 0;
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .formContainer textarea {
+    padding: 60px 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .formContainer input::placeholder,
+  .formContainer textarea::placeholder {
+    padding: 0 18px;
+    font-size: 16px;
+    color: #ece8e8;
+  }
+
+  .formBtn {
+    font-size: 18px;
+    width: 30%;
+  }
+
+  .whatsappDetail {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .whatsappDetail a {
+    font-size: 14px;
+  }
+
+  /* Footer Section */
+
+  .fa-circle-plus {
+    font-size: 20px;
+  }
+
+  .footerNavLinks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fqa p {
+    font-size: 20px;
+  }
+
+  .FAQ {
+    margin-bottom: 0;
+  }
+
+  .footerHeaderText h3 {
+    font-size: 24px;
+  }
+  .footerHeaderText p {
+    font-size: 16px;
+  }
+  .footerNavLinks {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn {
+    width: 32%;
+
+    font-size: 16px;
+  }
+  /* Services Section */
+  .services-Container {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .services-one {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+  }
+  .services-one img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .designs h3 {
+    font-size: 24px;
+  }
+  .designs p {
+    font-size: 14px;
+  }
+  .designs span {
+    font-size: 14px;
+  }
+  .serviceBtn {
+    font-size: 12px;
+    margin: 0;
+    width: 40%;
+  }
+
+  /* About Me Section */
+  .aboutMe {
+    width: 82%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .aboutMe > .aboutContent {
+    flex: 1;
+  }
+  .aboutMeImg img {
+    width: 110%;
+    height: 95vh;
+  }
+  .aboutMeText {
+    background-color: #f9f9f9;
+    padding: 40px;
+    width: 70%;
+    display: grid;
+    gap: 30px;
+  }
+
+  .aboutMeText p {
+    font-size: 24px;
+  }
+  .learnMoreBtn {
+    width: 50%;
+  }
+
+  /* Project Section */
+  .projectsContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .projects {
+    width: 40%;
+    height: 550px;
+  }
+
+  .projectImg img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .projectImg p {
+    margin: 8px auto;
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .contactBtn {
+    width: 10%;
+  }
+
+  /* Appointment section */
+  .apptBtn {
+    width: 10%;
+  }
+
+  /* Contacts Section */
+  .contactContainer {
+    width: 60%;
+  }
+  .contacts {
+    font-size: 18px;
+  }
+
+  /* CTA section */
+
+  .formContainer input {
+    padding: 12px 0;
+    font-size: 20px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .formContainer textarea {
+    padding: 60px 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .formContainer input::placeholder,
+  .formContainer textarea::placeholder {
+    padding: 0 18px;
+    font-size: 16px;
+    color: #ece8e8;
+  }
+
+  /* Footer FQA section */
+
+  .fqaSection {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+
+  .fqa p {
+    font-size: 14px;
+  }
+}

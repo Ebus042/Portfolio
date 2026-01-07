@@ -3,81 +3,294 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nwafor Ebuka A. | Web Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NEA-DEV || Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuerries.css" />
+    <link rel="stylesheet" href="bigScreen.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <img src="images/Tad logo.png" alt="" />
-      </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/neaLogo.png" loading="lazy" alt="business logo" />
+        </div>
+        <div class="navText">
+          <h3>Front End Web Developer</h3>
+        </div>
 
-      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-text">
-        <h1>Hi, I'm Nwafor Ebuka A.</h1>
-        <p>A Creative Web Designer</p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-      <div class="hero-image">
-        <img src="images/Ebuka-removebg-preview.png" alt="" />
-      </div>
-    </section>
+    <main>
+      <section class="heroSection">
+        <div class="herobg">
+          <div class="heroText">
+            <h1>
+              Crafting Beautiful Web<br />
+              Experiences
+            </h1>
+            <p>
+              As a front-end web developer, I focus on creating user-friendly
+              <br />and visually appealing websites tailored to your business
+              needs.
+            </p>
+            <button class="heroBtn">Explore My Work</button>
+          </div>
+        </div>
+        <div class="heroOptions">
+          <p>
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            <a href="#">View My Projects</a>
+          </p>
+          <p>
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <a href="#">Contact Me</a>
+          </p>
+        </div>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I craft clean and engaging web experiences.<br />
-        Passionate about design, code, and <br />turning ideas into real,
-        working websites.
-      </p>
-      <a
-        href="c:\Users\Hp\Documents\Learning-Web-Design-5th-Edition.pdf"
-        download
-        class="btn"
-        >Download Resume</a
-      >
-    </section>
+      <section class="services">
+        <h2>My Expertise</h2>
+        <div class="services-Container">
+          <div class="services-one">
+            <div class="designs">
+              <h3>Web Design</h3>
+              <p>
+                Creating visually stunning and user-friendly websites that
+                engage visitors and drive results.
+              </p>
+              <span>$250</span>
+              <button class="serviceBtn btn">Book Now</button>
+            </div>
+            <img
+              src="images/web-designImg.jpg"
+              loading="lazy"
+              alt="image of designs"
+            />
+          </div>
+          <div class="services-one">
+            <div class="designs">
+              <h3>Responsive Development</h3>
+              <p>
+                Building responsive websites that provide a seamless experience
+                across all devices.
+              </p>
+              <span>$250</span>
+              <button class="serviceBtn btn">Book Now</button>
+            </div>
+            <img
+              src="images/Responsive2.jpg"
+              loading="lazy"
+              alt="image of designs"
+            />
+          </div>
+        </div>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2>My Projects</h2>
-      <div class="project-grid" id="projectGrid">
-        <!-- Projects will be injected by JS -->
-      </div>
-    </section>
+      <section class="about-me">
+        <h2>Who Am I?</h2>
+        <div class="aboutMe">
+          <div class="aboutMeImg aboutContent">
+            <img src="images/IMG_9225.JPG" alt="creator image" />
+          </div>
+          <div class="aboutMeText aboutContent">
+            <h4>My Go-To-Front End Developer</h4>
+            <p>
+              I started my journey in web development with a passion for
+              creating intuitive and engaging web experiences. Today, I leverage
+              my skills to help businesses grow online through effective web
+              design and development. My commitment to quality and customer
+              satisfaction enables me to deliver results that exceed
+              expectations.
+            </p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+            <button class="btn learnMoreBtn">Learn More About Me</button>
+          </div>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Nwafor Ebuka A. | Web Designer</p>
-      <div class="socials">
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <a href="https://github.com/Ebus042/Portfolio">GitHub</a>
-      </div>
-    </footer>
+      <section class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projectsContainer">
+          <div class="projects">
+            <div class="projectImg">
+              <img src="images/portalImg.png" alt="" />
+              <p>
+                An example of my web design project showcasing a modern login
+                and sign-up form.
+              </p>
+              <a
+                class="siteBtn"
+                target="_blank"
+                href="https://ebus042.github.io/NEA-School-Portal/"
+                >View Site</a
+              >
+            </div>
+          </div>
+          <div class="projects">
+            <div class="projectImg">
+              <img src="images/portfilioImg.png" alt="" />
+              <p>
+                A creative portfolio showcasing various talents and services
+                offered, including responsiveness.
+              </p>
+              <a
+                class="siteBtn"
+                target="_blank"
+                href="https://ebus042.github.io/NEA-DEV-Portfolio01/"
+                >View Site</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="btn contactBtn">Contact Me</button>
+      </section>
+
+      <section class="appointmenctSection">
+        <i class="fa-solid fa-calendar-check icon"></i>
+        <h3>Schedule a Consultation</h3>
+
+        <p>
+          Book a time to discuss your project and how I can help bring your
+          vision to life.
+        </p>
+        <button class="btn apptBtn">Book Now</button>
+      </section>
+
+      <section class="testimonial">
+        <i class="fa-solid fa-quote-left"></i>
+        <h3>What My Clients Says</h3>
+        <div class="clients">
+          <div class="clientImg">
+            <img src="images/Testimonial-1.jpg" alt="a client image" />
+          </div>
+          <div class="clientsText">
+            <p>Transformed Our Online Presence Completely</p>
+            <h4>John Doe</h4>
+            <span>Business Owner</span>
+          </div>
+        </div>
+        <div class="paginContainer">
+          <div class="pagins active"></div>
+          <div class="pagins"></div>
+          <div class="pagins"></div>
+          <div class="pagins"></div>
+        </div>
+      </section>
+
+      <section class="contactSection">
+        <h3>Reach out to me here.</h3>
+        <div class="contactContainer">
+          <p class="contacts">
+            <i class="fa-solid fa-phone"></i>
+            <span>+2348100655023</span>
+          </p>
+          <p class="contacts">
+            <i class="fa-solid fa-envelope"></i>
+            <span>nwaforebuka12@gmail.com</span>
+          </p>
+          <p class="contacts">
+            <i class="fa-solid fa-map-marker"></i>
+            <span>43 Olaoluwa Street Igoba, Akure. <br />Ondo State</span>
+          </p>
+          <p class="contacts">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon - Fri: 10am - 6pm Sat: 10am - 6pm <br />Sun: Closed</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="ctaSection">
+        <div class="ctaContainer">
+          <h3>Get In Touch</h3>
+          <p class="whatsappDetail btn">
+            <i class="fa-brands fa-whatsapp"></i
+            ><a href="wa.me/+2348100655023">Connect on WhatsApp</a>
+          </p>
+          <span>OR</span>
+          <form class="formContainer">
+            <input type="text" placeholder="NAME*" />
+            <input type="email" placeholder="EMAIL*" />
+            <textarea name="text" placeholder="MESSAGE*"></textarea>
+            <button class="btn formBtn">Send Message</button>
+          </form>
+        </div>
+        <div class="socialMediaLinks">
+          <i class="fa-brands brands fa-facebook"></i>
+          <i class="fa-brands brands fa-tiktok"></i>
+          <i class="fa-brands brands fa-linkedin"></i>
+          <i class="fa-brands brands fa-instagram"></i>
+          <i class="fa-brands brands fa-youtube"></i>
+        </div>
+      </section>
+
+      <footer class="fqaSection">
+        <div class="FAQ ftSection">
+          <h3>Frequently Asked Questions</h3>
+          <div class="fqaContainer">
+            <div class="fqa">
+              <p>What services do you offer?</p>
+              <p><i class="fa-solid fa-circle-plus"></i></p>
+            </div>
+            <div class="fqa">
+              <p>How long does it take <br />to complete a project?</p>
+              <p><i class="fa-solid fa-circle-plus"></i></p>
+            </div>
+            <div class="fqa">
+              <p>Do you provide support <br />after project completion?</p>
+              <p><i class="fa-solid fa-circle-plus"></i></p>
+            </div>
+            <div class="fqa">
+              <p>Can you work within <br />my budget?</p>
+              <p><i class="fa-solid fa-circle-plus"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactInfo ftSection">
+          <div class="footerContainer">
+            <div class="logo footerLogoText">
+              <img src="images/neaLogo.png" alt="brand logo" />
+              <div class="footerHeaderText">
+                <h3>Your Vision, My Code</h3>
+                <p>
+                  Specializing in front-end web development to elevate your
+                  online presence.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="footerDetails">
+              <ul class="footerNavLinks">
+                <li>+2348100655023</li>
+                <li>nwaforebuka12@gmail.com</li>
+                <li>43 Olaoluwa Street Igoba, Akure. Ondo State</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Contact us</li>
+                <li>Privacy policy</li>
+                <li>Terms & Conditions</li>
+                <li>Refund Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="script.js"></script>
   </body>

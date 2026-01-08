@@ -30,7 +30,7 @@ body {
 }
 
 .navTopLinks {
-  background-color: #8b5959;
+  background-color: #eee8e8;
   padding: 24px;
   position: fixed;
   right: 0;
@@ -76,7 +76,7 @@ body {
 
 .links a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #260808;
   transition: transform 0.3s ease-in-out;
 }
 

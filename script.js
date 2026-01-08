@@ -28,5 +28,6 @@ document.addEventListener("click", (e) => {
     !menuBtn.contains(e.target)
   ) {
     navLinks.classList.remove("active");
+    document.body.style.overflow = "";
   }
 });

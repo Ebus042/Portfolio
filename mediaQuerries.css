@@ -220,7 +220,7 @@
 
   .footerNavLinks {
     grid-template-columns: repeat(1, 1fr);
-    font-size: 22px;
+    font-size: 14px;
   }
 }
 

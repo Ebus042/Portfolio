@@ -3,7 +3,8 @@ const navLinks = document.querySelector(".navTopLinks");
 const closeBtn = document.getElementById("close");
 const links = document.querySelectorAll(".links li");
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   navLinks.classList.add("active");
   document.body.style.overflow = "hidden";
 });
@@ -20,7 +21,12 @@ links.forEach((link) => {
   });
 });
 
-document.body.addEventListener("click", () => {
-  navLinks.classList.remove("active");
-  document.body.style.overflow = "";
+document.addEventListener("click", (e) => {
+  if (
+    navLinks.classList.contains("active") &&
+    !navLinks.contains(e.target) &&
+    !menuBtn.contains(e.target)
+  ) {
+    navLinks.classList.remove("active");
+  }
 });

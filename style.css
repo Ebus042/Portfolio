@@ -40,6 +40,7 @@ body {
   z-index: 50;
   transition: transform 0.4s ease;
   transform: translateX(100%);
+  border-radius: 0 0 10px 10px;
 }
 
 .links {
@@ -49,7 +50,7 @@ body {
   gap: 20px;
   list-style: none;
   font-size: 16px;
-  border-radius: 0 0 10px 10px;
+
   /* animation: slideInFromRight 1s forwards; */
 }
 

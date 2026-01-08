@@ -19,3 +19,8 @@ links.forEach((link) => {
     document.body.style.overflow = "";
   });
 });
+
+document.body.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+  document.body.style.overflow = "";
+});

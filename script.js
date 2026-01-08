@@ -31,3 +31,23 @@ document.addEventListener("click", (e) => {
     document.body.style.overflow = "";
   }
 });
+
+document.querySelectorAll('.links a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // 🚨 stop browser hash jump
+
+    const targetId = link.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // remove hash from URL
+    history.replaceState(null, "", window.location.pathname);
+
+    // close menu if needed
+    navLinks.classList.remove("active");
+    document.body.style.overflow = "";
+  });
+});

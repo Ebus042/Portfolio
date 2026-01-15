@@ -41,6 +41,11 @@ window.addEventListener("load", () => {
 const heroImages = document.getElementById("heroImgs");
 
 const images = ["images/heroBg.jpg", "images/heroBg2.jpg"];
+
+images.forEach((src) => {
+  const img = new Image();
+  img.src = src; // forces browser to load & cache
+});
 let currentIndex = 0;
 
 function changeBackround() {

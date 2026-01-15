@@ -130,7 +130,7 @@ body {
 
 .herobg {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("images/HeroBg.jpg") center/cover no-repeat;
+    url("images/heroBg.jpg") center/cover no-repeat;
   position: absolute;
   inset: 0;
   width: 95vw;

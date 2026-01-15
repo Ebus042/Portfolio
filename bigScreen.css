@@ -3,6 +3,16 @@
     margin: 0 40px;
   }
 
+  .navTopLinks {
+    top: 0;
+    width: 200px;
+    height: 60vh;
+  }
+
+  .links {
+    font-size: 16px;
+  }
+
   /* Hero Section */
   .heroSection {
     width: 93vw;

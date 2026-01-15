@@ -23,6 +23,12 @@
     width: 100%;
   }
 
+  .navTopLinks {
+    top: 0;
+    width: 170px;
+    height: 45vh;
+  }
+
   /* Hero Section */
   .heroSection {
     height: 80vh;
@@ -242,6 +248,16 @@
 
   .menu-toggle {
     font-size: 32px;
+  }
+
+  .navTopLinks {
+    top: 0;
+    width: 200px;
+    height: 40vh;
+  }
+
+  .links {
+    font-size: 22px;
   }
 
   /* Hero Section */

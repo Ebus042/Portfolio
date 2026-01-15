@@ -13,6 +13,29 @@ body {
   background-color: #ffffff;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+.onViewPort {
+  opacity: 0; /* start invisible */
+  transform: translateY(100px); /* start slightly down */
+  transition: opacity 0.2s ease, transform 1s ease;
+}
+
+.onViewPort.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.onViewPort.slideRight.show {
+  transform: translateX(0);
+}
+.onViewPort.slideLeft.show {
+  transform: translateX(0);
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -58,17 +81,6 @@ body {
   transform: translateX(0);
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .hidden {
   transform: translateX(100%);
   opacity: 0;
@@ -76,13 +88,15 @@ body {
 }
 
 .links a {
+  display: inline-block;
   text-decoration: none;
   color: #260808;
   transition: transform 0.3s ease-in-out;
 }
 
 .links a:hover {
-  transform: scaleX(1.2);
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -99,10 +113,9 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-
   font-size: 44px;
   cursor: pointer;
-  color: #f9f9f9;
+  color: #561d1d;
 }
 
 /* HERO SECTION */
@@ -119,6 +132,22 @@ body {
 
   width: 95vw;
   height: 90vh;
+  overflow: hidden;
+}
+
+.herobg.animate {
+  animation: slideInFromRight 2s forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .heroText {

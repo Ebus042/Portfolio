@@ -26,7 +26,7 @@
   .navTopLinks {
     top: 0;
     width: 170px;
-    height: 45vh;
+    height: 55vh;
   }
 
   /* Hero Section */
@@ -198,6 +198,9 @@
   .formContainer input {
     padding: 8px 0;
   }
+  .formContainer textarea {
+    font-size: 18px;
+  }
 
   /* Footer section */
   .fqaSection {
@@ -253,11 +256,11 @@
   .navTopLinks {
     top: 0;
     width: 200px;
-    height: 40vh;
+    height: 52vh;
   }
 
   .links {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   /* Hero Section */

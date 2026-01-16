@@ -70,7 +70,7 @@
           </p>
           <p>
             <i class="fa fa-book" aria-hidden="true"></i>
-            <a href="#">Contact Me</a>
+            <a href="#contactSection">Contact Me</a>
           </p>
         </div>
       </section>
@@ -86,7 +86,11 @@
                 engage visitors and drive results.
               </p>
               <span>$250</span>
-              <button class="serviceBtn btn">Book Now</button>
+              <button class="serviceBtn btn">
+                <a href="https://calendly.com/nea-dev" target="_blank"
+                  >Book Now</a
+                >
+              </button>
             </div>
             <img
               src="images/web-designImg.jpg"
@@ -102,7 +106,11 @@
                 across all devices.
               </p>
               <span>$250</span>
-              <button class="serviceBtn btn">Book Now</button>
+              <button class="serviceBtn btn">
+                <a href="https://calendly.com/nea-dev" target="_blank"
+                  >Book Now</a
+                >
+              </button>
             </div>
             <img
               src="images/Responsive2.jpg"
@@ -158,7 +166,7 @@
               <img src="images/portfilioImg.png" alt="" />
               <p>
                 A creative portfolio showcasing various talents and services
-                offered.
+                offered including responsiveness.
               </p>
               <a
                 class="siteBtn"
@@ -169,7 +177,9 @@
             </div>
           </div>
         </div>
-        <button class="btn contactBtn">Contact Me</button>
+        <button class="btn contactBtn">
+          <a href="#contactSection">Contact Me</a>
+        </button>
       </section>
 
       <section class="appointmenctSection onViewPort" id="">
@@ -180,7 +190,9 @@
           Book a time to discuss your project and how I can help bring your
           vision to life.
         </p>
-        <button class="btn apptBtn">Book Now</button>
+        <button class="btn apptBtn">
+          <a href="https://calendly.com/nea-dev" target="_blank">Book Now</a>
+        </button>
       </section>
 
       <section class="testimonial onViewPort" id="">
@@ -231,14 +243,19 @@
           <h3>Get In Touch</h3>
           <p class="whatsappDetail btn">
             <i class="fa-brands fa-whatsapp"></i
-            ><a href="wa.me/+2348100655023">Connect on WhatsApp</a>
+            ><a href="wa.me/+2348100655023" target="_blank"
+              >Connect on WhatsApp</a
+            >
           </p>
           <span>OR</span>
-          <form class="formContainer">
-            <input type="text" placeholder="NAME*" />
-            <input type="email" placeholder="EMAIL*" />
-            <textarea name="text" placeholder="MESSAGE*"></textarea>
-            <button class="btn formBtn">Send Message</button>
+          <form class="formContainer" id="formContainer">
+            <input type="text" name="name" placeholder="NAME*" />
+            <small class="error"></small>
+            <input type="email" name="email" placeholder="EMAIL*" />
+            <small class="error"></small>
+            <textarea name="message" placeholder="MESSAGE*"></textarea>
+            <small class="error"></small>
+            <button type="submit" class="btn formBtn">Send Message</button>
           </form>
         </div>
         <div class="socialMediaLinks">
@@ -255,20 +272,73 @@
           <h3>Frequently Asked Questions</h3>
           <div class="fqaContainer">
             <div class="fqa">
-              <p>What services do you offer?</p>
-              <p><i class="fa-solid fa-circle-plus"></i></p>
+              <div class="question">
+                <h4>What services do you offer?</h4>
+                <p class="toggleIcon">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </p>
+              </div>
+              <div class="answer">
+                <p>
+                  I specialize in front-end web development, creating
+                  responsive, user-friendly, and visually appealing websites. My
+                  services include:
+                </p>
+                <ul>
+                  <li>Website design and development</li>
+                  <li>Landing pages and portfolio websites</li>
+                  <li>UI/UX improvements for existing sites</li>
+                  <li>
+                    Integrating animations, interactivity, and responsive
+                    layouts
+                  </li>
+                  <li>Optimizing websites for performance and SEO</li>
+                </ul>
+              </div>
             </div>
             <div class="fqa">
-              <p>How long does it take <br />to complete a project?</p>
-              <p><i class="fa-solid fa-circle-plus"></i></p>
+              <div class="question">
+                <h4>How long does it take <br />to complete a project?</h4>
+                <p class="toggleIcon">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </p>
+              </div>
+              <div class="answer">
+                <p>
+                  The timeline depends on the scope and complexity of the
+                  project:
+                  <br />• Small websites: 1–2 weeks <br />• Medium websites: 3–5
+                  weeks <br />• Large projects: 6+ weeks
+                </p>
+              </div>
             </div>
             <div class="fqa">
-              <p>Do you provide support <br />after project completion?</p>
-              <p><i class="fa-solid fa-circle-plus"></i></p>
+              <div class="question">
+                <h4>Do you provide support <br />after project completion?</h4>
+                <p class="toggleIcon">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </p>
+              </div>
+              <div class="answer">
+                <p>
+                  Yes! I offer post-launch support, including bug fixes, content
+                  updates, and guidance on maintenance.
+                </p>
+              </div>
             </div>
             <div class="fqa">
-              <p>Can you work within <br />my budget?</p>
-              <p><i class="fa-solid fa-circle-plus"></i></p>
+              <div class="question">
+                <h4>Can you work within <br />my budget?</h4>
+                <p class="toggleIcon">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </p>
+              </div>
+              <div class="answer">
+                <p>
+                  Absolutely! I provide custom quotes that fit your budget while
+                  delivering high-quality results.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -304,6 +374,7 @@
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

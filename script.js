@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 // Hero Section Image
 const heroImages = document.getElementById("heroImgs");
 
-const images = ["images/heroBg.jpg", "images/heroBg2.jpg"];
+const images = ["images/HeroBg.jpg", "images/HeroBg2.jpg"];
 
 images.forEach((src) => {
   const img = new Image();
@@ -78,3 +78,60 @@ const observer = new IntersectionObserver(
   }
 );
 allSections.forEach((section) => observer.observe(section));
+
+// Contact section
+// Initialize EmailJS
+emailjs.init("ItwcPnzp33zLoylGV");
+
+const form = document.getElementById("formContainer");
+const inputs = form.querySelectorAll("input, textarea");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let isValid = true;
+
+  // Custom validation
+  inputs.forEach((input) => {
+    const error = input.nextElementSibling; // <small class="error">
+    if (input.value.trim() === "") {
+      error.textContent = `${input.placeholder.replace("*", "")} is required`;
+      isValid = false;
+    } else {
+      error.textContent = "";
+    }
+  });
+
+  if (!isValid) return; // stop if invalid
+
+  // Send email via EmailJS
+  emailjs.sendForm("service_nf26lb2", "template_76nwt7e", form).then(
+    () => {
+      alert("Message sent successfully!");
+      form.reset();
+    },
+    (error) => {
+      console.error(error);
+      alert("Failed to send message 😢");
+    }
+  );
+});
+
+// FAQ section
+const fqas = document.querySelectorAll(".fqa");
+
+fqas.forEach((fqa) => {
+  const question = fqa.querySelector(".question");
+
+  question.addEventListener("click", () => {
+    // Close all other FAQs
+    fqas.forEach((other) => {
+      if (other !== fqa) {
+        other.classList.remove("active");
+      }
+    });
+
+    // Toggle the clicked FAQ
+    fqa.classList.toggle("active");
+  });
+});

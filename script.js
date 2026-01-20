@@ -40,7 +40,11 @@ window.addEventListener("load", () => {
 // Hero Section Image
 const heroImages = document.getElementById("heroImgs");
 
-const images = ["images/HeroBg.jpg", "images/HeroBg2.jpg"];
+const images = [
+  "images/HeroBg.jpg",
+  "images/HeroBg2.jpg",
+  "images/heroBg3.jpg",
+];
 
 images.forEach((src) => {
   const img = new Image();

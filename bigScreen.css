@@ -15,8 +15,8 @@
 
   /* Hero Section */
   .heroSection {
-    width: 93vw;
-    height: 112vh;
+    width: 95vw;
+    height: 95vh;
   }
 
   .heroText {
@@ -25,12 +25,18 @@
 
   .heroText h1 {
     line-break: loose;
-    width: 50%;
+    width: 70%;
+    font-size: 56px;
+  }
+
+  .heroText p {
+    font-size: 22px;
+    width: 80%;
   }
 
   .herobg {
     width: 93vw;
-    height: 90vh;
+    height: 75vh;
   }
 
   .heroBtn {
@@ -40,14 +46,14 @@
   }
 
   .heroOptions {
-    margin: 20px 0;
     font-size: 16px;
+    bottom: 0;
   }
 
   /* SERVICES SECTION */
 
   .services-Container {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .designs h3 {
@@ -55,7 +61,7 @@
   }
 
   .designs p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .designs span {
@@ -68,32 +74,37 @@
 
   /* ABOUT ME SECTION */
   .aboutMe {
-    width: 100%;
-    margin: 40px auto;
     display: flex;
-    gap: 40px;
+    flex-direction: row;
   }
 
+  .aboutMe > .aboutContent {
+    flex: 1;
+  }
   .aboutMeImg img {
-    width: 110%;
+    width: 100%;
     height: 95vh;
-    display: block;
   }
-
   .aboutMeText {
-    padding: 10px;
-    width: 60%;
-    height: auto;
-    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 40px;
+    width: 100%;
+    height: 95vh;
+    display: grid;
+    gap: 30px;
   }
 
   .aboutMeText p {
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .learnMoreBtn {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 60%;
   }
 
   /* PROJECTS SECTION */
@@ -233,6 +244,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .fqa h4 {
+    font-size: 24px;
+  }
+
   .fqa p {
     font-size: 20px;
   }
@@ -245,14 +260,30 @@
     font-size: 24px;
   }
   .footerHeaderText p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .footerNavLinks {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1280px) {
+  .heroSection {
+    width: 95vw;
+    height: 85vh;
+  }
+
+  .herobg {
+    width: 93vw;
+    height: 65vh;
+  }
+
+  .heroBtn {
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
   .btn {
     width: 32%;
 
@@ -260,10 +291,10 @@
   }
   /* Services Section */
   .services-Container {
-    flex-direction: row;
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 10px;
     align-items: center;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
@@ -275,7 +306,7 @@
   .services-one img {
     width: 100%;
     height: 350px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0 auto;
   }
 
@@ -283,24 +314,21 @@
     font-size: 24px;
   }
   .designs p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .designs span {
-    font-size: 14px;
+    font-size: 16px;
   }
   .serviceBtn {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     width: 40%;
   }
 
   /* About Me Section */
   .aboutMe {
-    width: 82%;
-    margin: 40px auto;
     display: flex;
-    justify-content: center;
-    flex: 1;
+    flex-direction: row;
   }
 
   .aboutMe > .aboutContent {
@@ -314,6 +342,7 @@
     background-color: #f9f9f9;
     padding: 40px;
     width: 70%;
+    height: 95vh;
     display: grid;
     gap: 30px;
   }
@@ -331,7 +360,7 @@
     margin: 0 auto;
   }
   .projects {
-    width: 40%;
+    width: 50%;
     height: 550px;
   }
 
@@ -393,5 +422,9 @@
 
   .fqa p {
     font-size: 14px;
+  }
+
+  .footerNavLinks {
+    font-size: 16px;
   }
 }

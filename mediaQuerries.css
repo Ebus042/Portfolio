@@ -1,4 +1,4 @@
-@media (min-width: 355px) {
+@media (min-width: 344px) {
   body {
     margin: 0 10px;
     background-color: #ffffff;
@@ -31,12 +31,12 @@
 
   /* Hero Section */
   .heroSection {
-    height: 80vh;
+    height: 65vh;
     width: 100%;
   }
 
   .herobg {
-    height: 60vh;
+    height: 50vh;
     width: 100%;
   }
   .heroText {
@@ -65,37 +65,7 @@
   .heroOptions {
     font-size: 12px;
     padding: 8px;
-  }
-
-  /* Services Section */
-  .services-Container {
-    flex-direction: column;
-  }
-
-  .services-one {
-    flex-direction: column-reverse;
-    gap: 30px;
-    padding: 20px 30px;
-    width: 100%;
-  }
-
-  .designs {
-    gap: 20px;
-  }
-
-  .designs p {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .services-one img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .designs span {
-    margin: 10px 0;
+    bottom: 0;
   }
 
   /* About Me Section */
@@ -124,7 +94,7 @@
   }
 
   .aboutMeText p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .btn {
@@ -132,6 +102,37 @@
   }
   .learnMoreBtn {
     width: 100%;
+  }
+
+  /* Services Section */
+  .services-Container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services-one {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  .designs {
+    gap: 20px;
+  }
+
+  .designs p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .services-one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .designs span {
+    margin: 10px 0;
   }
 
   /* Projects Section */
@@ -163,7 +164,7 @@
   }
 
   .projectImg p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .projects a {
@@ -274,13 +275,14 @@
 
   .heroBtn {
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .heroOptions {
     font-size: 16px;
   }
 
   /* Services Section */
+
   .designs h3 {
     font-size: 36px;
   }
@@ -323,7 +325,7 @@
   }
 
   .projectImg p {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .projects a {

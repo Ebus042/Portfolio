@@ -201,7 +201,7 @@ a {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%); /* center it */
   gap: 20px;
@@ -212,7 +212,7 @@ a {
 
 .heroOptions p {
   border: 2px solid #8d7070;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -240,7 +240,8 @@ a {
 }
 
 .services-Container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -318,10 +319,10 @@ a {
   font-size: 32px;
 }
 
-.aboutMe {
+/* .aboutMe {
   width: 80%;
   margin: 40px auto;
-}
+} */
 
 .aboutMeImg img {
   width: 60%;
